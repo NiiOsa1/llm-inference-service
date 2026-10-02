@@ -1,0 +1,19 @@
+[project]
+name = "llm-inference-service"
+version = "0.1.0"
+description = "Provider-agnostic, production-oriented service boundary for large language model inference."
+readme = "README.md"
+authors = [
+    { name = "Michael Mensah Ofeor" }
+]
+requires-python = ">=3.12.3,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+vllm = [
+    "vllm==0.30.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"

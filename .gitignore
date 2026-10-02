@@ -1,0 +1,41 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Build output
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Runtime
+*.log
+*.pid
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Model artifacts
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+
+# Keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
