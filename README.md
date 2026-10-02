@@ -158,12 +158,11 @@ The previously working vLLM environment is retained as a rollback reference whil
 This service does not own:
 
 - application business logic
-- telecom routing logic
 - unrestricted tool execution
 - model artifact trust decisions
 - conversation persistence
 - application authorization policy
-- application user interfaces
+- end-user interfaces
 
 Those concerns belong to their respective system boundaries.
 
