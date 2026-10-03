@@ -36,7 +36,9 @@ The driver-reported CUDA version and the container CUDA toolkit version describe
 - Quantization reported by the engine: `modelopt_mixed`, for the approved NVFP4 artifact.
 - Local Docker image ID: `sha256:30d6740bb68a752427a4156a36f1a98db5279f9006c4e7c33882cb250e2c53a0`.
 
-The API alias and directory label are recorded exactly. They do not establish an independently verified upstream model identity. The full upstream revision and artifact manifest remain to be attached from Model Control; `482ca0f3` is only the recorded short identifier. A local image ID is not a published registry pull reference.
+Model Control metadata subsequently inspected on 2026-10-03 records repository `nvidia/Qwen3.8-27B-NVFP4` and full revision `482ca0f3832238542f8f5295dde86b5f22711d80`. Its historical integrity record reports 19 files verified and promotion to `SUPPLY_CHAIN_APPROVED_FOR_TESTING` on 2026-09-26. This is recorded local provenance, not independent upstream verification, a fresh integrity check or production certification.
+
+The original checksum list is preserved at [model-reference/SHA256SUMS](model-reference/SHA256SUMS); the copied list was compared byte for byte with the original. The complete local `modelctl.json` has not been published with this report. The API alias is a serving label, not proof of model identity. A local image ID is not a published registry pull reference. See the developer runbook for acquisition and verification instructions.
 
 ## Selected parameters and what they do
 
@@ -127,7 +129,7 @@ Estimated graph memory and the final graph pool were different measurements: ear
 
 ## Evidence inventory
 
-Paths are relative to the repository. These records existed locally during qualification; their presence on GitHub depends on the evidence commit. Logs match the repository's `*.log` ignore rule and need intentional preservation if selected for publication.
+Paths are relative to the repository. As of this documentation update on 2026-10-03, the experiment directories below remain local and untracked; they were preserved in a local backup archive and have not been published to GitHub. The published runbook and model checksum list do not include this benchmark replay evidence. Logs match the repository's `*.log` ignore rule and need intentional preservation if selected for publication.
 
 | Local evidence directory under `qualification-records/` | Purpose |
 |---|---|
