@@ -171,3 +171,14 @@ Those concerns belong to their respective system boundaries.
 Reduce feature breadth when necessary, not engineering quality.
 
 The goal is a small service with a permanent architecture that can be hardened, extended, benchmarked, containerized, and deployed without requiring an architectural rewrite.
+
+
+## Development documentation
+
+- [MSI inference qualification](docs/msi-inference-qualification.md):
+  hardware, configuration, benchmark results and known limitations.
+- [Developer runbook](docs/msi-development-runbook.md):
+  prerequisites, setup, operation and troubleshooting.
+
+The documented profile is validated for local development on the
+reference hardware. It is not a production certification.
